@@ -81,30 +81,31 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    backdrop-filter: none;
   }
   .container::before,
   .container::after {
-    display: none; 
+    display: none;
   }
   
   .clock span{
-    font-size: 40px; 
+    font-size: 40px;
   }
 
   .clock span::after{
-    font-size: 10px; 
-    bottom: -3px; 
+    font-size: 10px;
+    bottom: -3px;
   }
 
   #hrs::after{
-    content: 'H'; 
+    content: 'H';
   }
 
   #min::after{
-    content: 'M'; 
+    content: 'M';
   }
 
   #sec::after{
-    content: 'S'; 
+    content: 'S';
   }
 }
