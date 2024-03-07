@@ -74,3 +74,34 @@
 #sec::after{
   content: 'SEC';
 }
+@media (max-width: 768px) {
+  .clock{
+    flex-direction: column;
+    background: none;
+  }
+  .container::before,
+  .container::after {
+    display: none; 
+  }
+  
+  .clock span{
+    font-size: 40px; 
+  }
+
+  .clock span::after{
+    font-size: 10px; 
+    bottom: -3px; 
+  }
+
+  #hrs::after{
+    content: 'H';
+  }
+
+  #min::after{
+    content: 'M';
+  }
+
+  #sec::after{
+    content: 'S';
+  }
+}
