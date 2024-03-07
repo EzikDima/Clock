@@ -78,6 +78,9 @@
   .clock{
     flex-direction: column;
     background: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .container::before,
   .container::after {
@@ -94,14 +97,14 @@
   }
 
   #hrs::after{
-    content: 'H';
+    content: 'H'; 
   }
 
   #min::after{
-    content: 'M';
+    content: 'M'; 
   }
 
   #sec::after{
-    content: 'S';
+    content: 'S'; 
   }
 }
